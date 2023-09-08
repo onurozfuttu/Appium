@@ -18,7 +18,13 @@ public enum Device {
             "Android",
             "uiautomator2"
 
-    );
+    ),
+
+    SAMSUNG_A53("RKCV40MN6Z",
+                        "13",
+                        "My Phone",
+                        "Android",
+                        "uiautomator2");
     public String udid;
     public String version;
     public String deviceName;

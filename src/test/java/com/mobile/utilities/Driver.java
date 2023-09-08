@@ -34,12 +34,17 @@ public class Driver {
 
 
     private static DesiredCapabilities setCaps(Device device, App app) {
+        //       String apkDest="src/test/resources/Calculator.apk";
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         capabilities.setCapability("appium:udid", device.udid);
         capabilities.setCapability("appium:version", device.version);
         capabilities.setCapability("appium:device", device.deviceName);
         capabilities.setCapability("platformName", device.platformname);
+
+        //        if(app.apk.length()>0)
+//            capabilities.setCapability("appium:app",apkDest+app.apk);
+
         capabilities.setCapability("appPackage", app.appPackage);
         capabilities.setCapability("appActivity", app.appActivity);
 
