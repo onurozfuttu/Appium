@@ -1,4 +1,4 @@
-# B4_Appium
+# Appium
 
 Appium with JUnit Framework
 
